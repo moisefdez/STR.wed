@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Aplicaciones</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="wedsite icon" type="png" href="./imagenes/logo-claro.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+           <!--  Titulo y Bienvenido -->
+
+           <div id="BodyBorder">
+    
+            <h1 id="titulo">          
+                <div id="portal-Aplic">
+                    Portal de Aplicaciones Wed
+                </div>
+
+                <div  id="Bienvenido">  
+                    Bienvenido <span id="Usuario"> </span> (Usuario del portal)   
+                </div> 
+            </h1>
+
+            <!-- //Portal de Aplicaciones y ayuda //  -->
+
+            
+            <div id="Aplic-Ayuda">
+                <div  id="logo">
+                    <img id="logo1" src="./imagenes/logo-claro.png" alt= 'claro'>
+                </div>
+
+                <div id="c1" class="caja">               
+                    Aplicaciones
+                </div>
+                    
+                <div id="c2" class="caja" ></div>
+                    
+                <div id="c3" class="caja">
+                        Ayuda
+                </div>      
+                
+            </div>
+
+            <!-- Portal de inicio y Aplicaciones -->
+            <div id="inicio-Aplic-cont">
+                <div id="inicio-Aplic">
+                    <div id="c4" class="text">Inicio</div>
+                    <div id="c5" class ="text">/ Mis Aplicaciones</div>
+                </div>
+            </div>
+            
+            <!-- wed2-warning -->
+            
+            <section id="wed2">
+                <div id="recuadro">
+                    <div id="STR" class="filas">STR</div>
+                    <div id="message" class="filas">
+
+                        <p id="p1" class="warning">Este sistema y sus recursos son propiedad del Enano y es para el uso exclusivo del 
+                        personal autorizado por esta entidad.
+                        </p>
+                        
+                        <p id="p2" class="warning">
+                            Su uso indebido puede conllevar acciones disciplinarias y/o legales.
+                        </p>
+
+                        <p id="p3" class="warning">
+                            Toda actividad realizada en este sistema esta siendo registrada y monitoreada.  
+                        </p>
+
+                    </div>
+                    <div id="buttons" class="filas">
+                        
+                        <a href="./sistemaSTR.html">
+                            <button id="Aceptar" class="buttons">Aceptar</button>
+                        </a>
+
+                        <a href="./Porta-Aplic.html">
+                            <button id="Cancelar" class="buttons">Cancelar</button>
+                        </a>
+                
+                    </div> 
+                </div>   
+            </section>
+
+            <footer>
+                © Todos los derechos reservados, Claro 2023.
+            </footer>
+                   
+        </div>
+        <script>
+
+            const Usuario = document.getElementById('Usuario')
+            let mivariable= sessionStorage.getItem('usuario');
+        
+        
+        
+            function iniciar(){
+                Usuario.innerHTML = mivariable
+            }
+        
+            window.addEventListener('load',iniciar)
+        </script>
+    
+</body>
+</html>
